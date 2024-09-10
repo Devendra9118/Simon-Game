@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&family=Poppins:wght@300;400;500&family=Press+Start+2P&family=Roboto:ital,wght@0,300;0,400;0,700;1,500&family=Ubuntu&family=VT323&display=swap');
+
+body {
+  background-color: #011F3F;
+  height: 100vh;
+  text-align: center;
+}
+
+.heading {
+  font-family: "Press Start 2P", cursive;
+  color: #fff;
+  font-size: 3rem;
+}
+
+#game {
+  height: 70vh;
+  width: 70vw;
+  min-width: 400px;
+  margin: auto;
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.boxes {
+  display: flex;
+  flex-direction: column;
+  row-gap: 50px;
+}
+
+.box {
+  height: 200px;
+  width: 200px;
+  border: 10px solid black;
+  border-radius: 20%;
+}
+
+.green {
+  background-color: green;
+}
+
+.red {
+  background-color: red;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.pressed {
+  box-shadow: 0 0 20px white;
+  background-color: grey;
+}
+
+.game-over {
+  background-color: red;
+}
+
+.animation {
+  opacity: 0.1;
+}
+
+@media (max-width: 800px) and (min-width: 400px) {
+  .heading {
+    font-size: 2.5rem;
+  }
+
+  #game {
+    gap: 30px;
+  }
+
+  .boxes {
+    row-gap: 30px;
+  }
+
+  .box {
+    height: 170px;
+    width: 170px;
+  }
+
+
+}
+
+@media (max-width: 399px) {
+  .heading {
+    font-size: 2rem;
+  }
+
+  #game {
+    gap: 20px;
+  }
+
+  .boxes {
+    row-gap: 20px;
+  }
+
+  .box {
+    height: 120px;
+    width: 120px;
+  }
+}
